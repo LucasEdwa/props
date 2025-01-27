@@ -1,11 +1,11 @@
-import { DummyJsonResponse } from "../models/DummyJsonResponse";
+import { IDummyJsonResponse } from "../../../models/IDummyJsonResponse";
 import { api } from "./axios";
 
 const getProducts = async () => {
     try {
-        const {data} :{data: DummyJsonResponse} = await api.get('/products');
-        console.log(data.products);
-        return data.products;
+        const response = await api.get<IDummyJsonResponse>('/products');
+        console.log(response.data.products)
+        return response.data.products;
     } catch (error) {
         console.error(error);
         return [];

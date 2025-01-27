@@ -1,5 +1,5 @@
-import { CartItem } from "./models/CartItem"
-import { Product } from "./models/Products";
+import { CartItem } from "../../models/CartItem"
+import { Product } from "../../models/Products";
 
 type CartProps = {
   cart: CartItem[];

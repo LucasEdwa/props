@@ -1,5 +1,5 @@
 import { Product } from "./Products";
 
-export type DummyJsonResponse = {
+export interface IDummyJsonResponse  {
     products: Product[];
 };

@@ -1,6 +1,6 @@
 
 import { ShowProduct } from './ShowProduct';
-import { Product } from './models/Products';
+import { Product } from '../../models/Products';
 
 type ShowProductsProps = {
     products: Product[];

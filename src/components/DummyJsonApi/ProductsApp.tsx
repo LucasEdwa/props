@@ -1,7 +1,7 @@
 import { Cart } from "./Cart"
 import getProducts from "./lib/getProducts";
-import { CartItem } from "./models/CartItem";
-import { Product } from "./models/Products";
+import { CartItem } from "../../models/CartItem";
+import { Product } from "../../models/Products";
 import { ShowProducts } from "./ShowProducts";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
